@@ -1,0 +1,207 @@
+<!-- HTML Store file by Eric Germond, "actualstore.html"   -->
+
+<!doctype html>
+<html>
+<head><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_mi-U1i6s6wSiSKBkkT_7PXx95JB553CroH1b2w2X7wXRb5daKb13IZ-Z4N9FzhjMfHcj2f3t-dwao26NXEtduM73lgpAU_zLKs4Q7TuQbVYfxUIIkKqundd_EGuwVTRHqjT7pE3eadpIvWXnApH3dnJnJVsBJAnOqmJQ0c9muC1aVW5VNkcNilo_FUMPOJUwGQqiB5OoLhhzs-_eNki6jUw8groJ-zMraL-QY5HAL_ey81_qjOvWOkbULi9ZXs9Gdy8rzYOaFrc9NTemYcxNOn8WUvC7Ic-8Vw0rfBJLip25wbOSAiLvPuLXRJZ-nlfpmGOBLURzAdaZtSXaHdlDOD9-5Y9Sv5452ZkTqpjIB1TpevYKfC0d1rGy7zCNDGXE5ZzzQzcGYSulB4BfzEGaonXu4H5u4BJolSz-hdg4o19rGCOb98gYTOpJUut6o8cZ4ADZKqyr-TX2ei7eDRJjxq9K0zgyyED94-JyzBK-xrWeozMqWMTQZGmiEvYlEiecvKuwnZyplZvqW0d4Q-69Vgale1DhZWqkyysgsxK-GhOm75BydHwBZMGBb6nsIVCwWqhiClQP6YkEEjGRGxecs2IEHpcLyRFu6tbSNxbpDG2NY1mhH_pI3JYU3xHshbV4XpsNdnyDxEs9AmL30-NEbtW8onFgTCeZpqekf7EwtqNDJso1aE1Y_Shqx4phO4ojmMQ49g1GIda_BYazx6QhquppKOc6GzgwAS67nZoPxzSEPUfUNE4sZEOndS2MqNVrSXaEfEqEzIbiUf3eGsGAmFLfLyxtaIX4WI_lBeS0kIgy8O3eyNDUCL3j5CRnWpULTwoh976Y-_7mEtu_2MEtIFvaagGsaXR_Ow8wmLg2jU21h71YJJ8ZQB971y04Tr22HmIxzDoFVO51D26pK8tEjAJEMLSVtJAcqnONi_cWnc0fRSvccMP6PmojBamMLYdquDMyR8mk7brFS9nNL8y_eeM3IbHTqsasPeMOKKylboars5batS6iM8aRsjg9bqp2ajAd6JoTAgUvwr7yICz_8tO1Q4q4n0MgcvAKh4kQNmOx6GeFnwP44Gge-vlHt4MV1VKf-u63H5wP17bpDiOagDsV3eSg8Fgr4Ysextiaui_Drrt0bzrwIxC_20DVzLbrEYWNQ_9faJacomxAXFXdnRCyVv0tC9d6NSIDF17NCqSSEcWYNKotSEeWY6_KXIRFQCCfVw18hCfGEPHI2iILQ" nonce="f33a6586c3a99b8a24c90c07b70f1242" charset="UTF-8"></script><script type="text/javascript" src="database.js"></script>
+  <!--Connects file to the javascript file.-->
+
+ 
+<!--These are functions that will open a pop up which will display an items information-->
+<!--The <script> notation lets us write small bits of javascript in a designated area in a html file.-->
+<script>function item1() {
+  alert('Buy one of our premium hoodies!');
+ 
+}
+function item2() {
+  alert('Buy one of our famous cat portraits!');
+  
+}
+function item3() {
+  alert('Buy one of the best selling video games, Uncharted 4!');
+  
+}
+function item4() {
+  alert('Buy the replica of an axe!');
+}
+
+</script> 
+<!--Rest of the items in the JS file as they need to be connected with the current account database.-->
+
+<!--This allows us to use a little bit of CSS in our program for styling. In this case I simply centered the text.-->
+<style type = "text/css">
+  p {
+   text-align:center
+  
+   
+  }
+
+  body {
+    height: 100%;
+ background-image: url("background1.jpg");
+ background-repeat: no-repeat;
+background-size: 100% 100%;
+  }
+  </style>
+  <!--The second part puts everything in the body in front of a background, which we have to modify in size to make it fit the whole page.-->
+</head>
+<body>
+  <!--Chose <h1> because it is the biggest font for headers.-->
+  <h1 align = "center"> Welcome to Eric's Ecommerce Store, Ericslist!</h1>
+   <!--Sends the user to the email application on their device and automatically sets the mailto name to the recipient.-->
+  <a href="mailto:Millerrick254@gmail.com" target="_blank">Send me an email!</a>
+ <!--Target == blank so that no new tab is opened.-->
+  <div>
+  
+  </div>
+  <!--Centers all of the data for a cleaner look, must be put outside of forms.-->
+  <center>
+    <form> <!--The form is used when information is submitted, not always needed.-->
+      <!--Once the button is clicked, the timecheck function from the javascript file will run.-->
+
+      <button type = "button" onclick="timecheck()">Check to see if you can get your minute reward!</button>
+  </form>
+    <ul> <!--A list of all the items is created in order to order them all vertically.-->
+        <li><img src="hoodie.jpg" alt="Unavailable"width = "150" height = "150"><form>
+          <!--We must download and link the jpg file or input a photos online URL for it to work,
+          and the size of it can also be modified which I did to make the images more visible and equal in size.-->
+          <form>
+            <select name = "selection" id = "itemA"> <!--Opens up a dropdown list with 2 options, rids the need for inputting text.-->
+               <option value = "N/A" selected>N/A</option> <!--This data is later used in the shoppingcart function to see what items the user has selected.-->
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+          <button type="button" onclick="item1()">Hero Hoodie - 5 Ericoins</button>
+          
+          </li>
+          <script> document.writeln("<br>" + "<br>")</script> <!--Spaces out the items manually, computer does not do otherwise.-->
+        <li><img src="cat.jpg" alt="Unavailable" width = "150" height = "150" >
+         
+          <form>
+            <select name = "selection" id = "itemB"> 
+              <!--Named each item alphabetically as well from A-I, must be present to be extracted from the JS file.-->
+               <option value = "N/A" selected>N/A</option>
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+         <button type="button" onclick = "item2()">Cat Picture - 15 Ericoins</button>
+      </li>
+      <script> document.writeln("<br>" + "<br>")</script>
+        <li><img src="uncharted.jpg" alt="Unavaible" width = "150" height = "150">
+      
+          <form>
+            <select name = "selection" id = "itemC">
+               <option value = "N/A" selected>N/A</option>
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+         <button type="button" onclick = "item3()">Uncharted - 8 Ericoins</button>
+        </li> 
+        <script> document.writeln("<br>" + "<br>")</script>
+
+        
+        <li> <img src="axe.jpg" alt="Unavailable" width = "150" height = "150">
+          
+          <form>
+            <select name = "selection" id = "itemD">
+               <option value = "N/A" selected>N/A</option>
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+         <button type="button"onclick = "item4()" >Axe - 10 Ericoins</button>
+        </li> 
+
+        <script> document.writeln("<br>" + "<br>")</script>
+
+        <li><img src="questionmark.jpg" alt="Unavailable" width = "150" height = "150">
+          
+          <form>
+            <select name = "selection" id = "itemE">
+               <option value = "N/A" selected>N/A</option>
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+         <button type="button"onclick = "item5()" >User Item 1</button>
+        </li> 
+             <!--Must use a default name for the button and a default image now as it will always change due to the user uploads.-->
+        <script> document.writeln("<br>" + "<br>")</script>
+
+        <li><img src="questionmark.jpg" alt="Unavailable" width = "150" height = "150">
+          
+          <form>
+            <select name = "selection" id = "itemF">
+               <option value = "N/A" selected>N/A</option>
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+         <button type="button"onclick = "item6()" >User Item 2</button>
+        </li> 
+
+        <script> document.writeln("<br>" + "<br>")</script>
+        
+        <li><img src="questionmark.jpg" alt="Unavailable" width = "150" height = "150">
+          
+          <form>
+            <select name = "selection" id = "itemG">
+               <option value = "N/A" selected>N/A</option>
+               <option value = "Purchase">Purchase</option>
+            </select>
+         </form>
+         <button type="button"onclick = "item7()" >User Item 3</button>
+        </li> 
+<script> document.writeln("<br>" + "<br>")</script>
+
+<li><img src="questionmark.jpg" alt="Unavailable" width = "150" height = "150">
+  
+  <form>
+    <select name = "selection" id = "itemH">
+       <option value = "N/A" selected>N/A</option>
+       <option value = "Purchase">Purchase</option>
+    </select>
+ </form>
+ <button type="button"onclick = "item8()" >User Item 4</button>
+</li> 
+<script> document.writeln("<br>" + "<br>")</script>
+
+<li><img src="questionmark.jpg" alt="Unavailable" width = "150" height = "150">
+  
+  <form>
+    <select name = "selection" id = "itemI">
+       <option value = "N/A" selected>N/A</option>
+       <option value = "Purchase">Purchase</option>
+    </select>
+ </form>
+ <button type="button"onclick = "item9()" >User Item 5</button>
+</li> 
+<script>document.writeln("<br>" + "<br>")</script>
+    </ul>
+
+  </center>
+      
+
+   <h3>Log Out</h3>
+   <form action="logmein.html"> <!--The submit type allows an action onclick, in this case when a user logs out they are brought back to the login page.-->
+    <input type="submit" onclick="logmeout()">Click here to confirm logout!</input>
+  </form>
+   
+            <center>
+        <form action="actualstore.html"> <!--Load up the same page so that the site can refresh itself.-->
+    <input type="submit" onclick= "ShoppingCart()">Click here to confirm your purchase!</input>
+  </form>
+    </center>   
+    <center>
+    <button type = "button" onclick = "deleter()">Admin only deleter button.</button>
+  </center>
+   <div>
+  <form>
+  
+  <input type="text" id="good" placeholder = "The name of your item.">
+  <input type="text" id="price" placeholder = "Selling Price">
+  <button type = "button" onclick = "uploaditem()">Upload to the store!</button>
+  </form>
+
+   </div>
+<div>
+<button type = "button" onclick = "history()">Check out your last bought item!</button>
+</div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!-- HTML Login file by Eric Germond,   -->
+<!DOCTYPE html>
+<html>
+    <head><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Y4u_LhcnzsQLMaKWTw1DA8itKXrvETOHUD-uYmD0AwUbPVI9KV8jNJ6bwJrUe6cEPcq4sHQrV3Se2sGeI2vaHTPUINCefNXwS4aqvn53ASJG2dY8nvWxsck8sfC9uen4WAgQskokviM47oHK-CQcb613ipH1hRA7FLvPryhhAsCJxAGxQqZrLydRx2gbvDgj-kZLxr8vfnuEr2l9_PhNiYc7pRCQxxN-HLzRtKiKzw-fyydUkC01XU7LpEiC1ff9sfTfxH5o-3gP0p334WSeHw7O80mZGSeRBBwtKzm-IQYR_mDQ1OPOgoW9U51iuybXac-b7JlzPurVM_ufdRT0LNNNG3IBgJJ9Mx0XtSnkTQOU24Hi179VGmNc625Q5Ume1fMJHbK8G8QRDlS2-cFpOoSKVS-PlepEfih7uQS1GwoaikLoPGeictlKh3vbnG3PI4OhjoKUodSxrBEx9v429hEMzALC1HKpTpkyLLsz0HKbjUxBR3gbatxj27Mm_Q1xrmBxFCBBusUycZxQnvpsgS5kjl0JCQ_rALRMFwyeV4-MQJ92QPfQf2Pq9xhKfcqlZ0aV8Kw5vWyx8x8YlarTTU7usIEAc6YpMwoBbN_3E6cwcOa4MnOPYh_ZNRyjgri4wqnF0Nt9l8AuG9SnKZf1S4pHfa34ie8Cz8WYDuEUMwWc5v5HzpROvgcqTEesUxWV28AFERE9gDeMV3rRVMQpP1iJl1Luyu0BPGDwZbWY5OssaqgDQn1Sa2fXciIFRjtJdiSTzJHiCF7Bp1if9AjXOE1usvt8inQA3OVXJRxF793MMWX0_PrmvbibQxE_B6cX3TZDzESS_RumGTIVqmPnigWurnYK0LZEyaLTQzOPEq11LUpyo4JppB9CEGTDVls6qP_iHHrspCcZaW0cwlei_CHRP10_gfUVXPQ4bkQrnzRaZ3N7XlqB8PERf7iBajuC6LiCEyI7PF2KgGGcGL2RcR9K19AvZIYiVqugg9CVX2E6xqfjFXOi3RIWBbcEoNVntHsM7C_-e8336h70YmQzaCYLhAcwGGkBua1gznOG06xUVYFC2F0cZ48sFGc6vKfeQQgBpI3OT8g2wdt1gYeUiG5y84IK0vhPhrKMZMsfmR2cDa0w9Jf2e8ehUk04GTqDprsvnu1d_vjQQskmiPuzCvHszNoQbnBuL5w790oBL40dWhon4AFq4NbnZxfKz0rOQjjb9n0KF7Izi1jywTeXMQ" nonce="6b584969722b50f3fd50619b50676786" charset="UTF-8"></script><script type="text/javascript" src="database.js"></script></head>
+    <!--Must connect with the Javascript file in use, do this in the head section.-->
+    <h1 align = "center">Entry Page</h1>
+    <body>
+
+        <h1>Todays Date is: </h1> <!--Must use script here because date can only be obtained through variable.-->
+        <script>
+           var day = new Date();
+           document.write(day);
+        
+        </script>
+    <form>
+
+        <h1>Create an account!</h1>
+            <input type="text" id="username1">
+            <!--Credential input, the value of the text gets sent to the checker function in the java file.-->
+            <input type="password" id="password1">
+            <form>
+                <input type="submit" onclick="checker()" value ="Click to create Account!"></input>
+              </form>
+           
+            
+           </form>
+           
+           
+           <h1>Login!</h1>
+           <form>
+            <input type="text" id="nameinput">
+           
+            <input type="password" id="passinput">
+            
+        
+                 </form>
+                 <!--Takes the user to the storepage immediately on click, whether the credentials are valid or not-->
+<form action="actualstore.html">
+                <input type="submit" onclick="logmein()">Login!</input>
+              </form>
+           <div>
+               
+
+               
+           </div>
+        
+      </body>
+</html>
