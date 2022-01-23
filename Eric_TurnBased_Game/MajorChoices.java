@@ -1377,7 +1377,7 @@ if (win == 1)
   }
   else {
 	current.setHealth(-999);
-	System.out.println("KABOOM!");
+	
   }
   System.out.println("The Rock hit you and brought you down to " + current.getHealth() + " hp!");
   
@@ -1392,7 +1392,7 @@ if (win == 1)
        
        else {
     	current.setHealth(-500);
-    	System.out.println("KABOOM!");
+    	
        }
        
 	    System.out.println("You choose to tank the hit taking half damage, leaving you with " + current.getHealth() + "/" + ohp + " hp.");
@@ -1420,7 +1420,7 @@ if (win == 1)
      
      else {
      current.setHealth(-999);
-     System.out.println("KABOOM!");
+     
      }
      System.out.println("The Rock hit you and brought you down to " + current.getHealth() + " hp!");
    
